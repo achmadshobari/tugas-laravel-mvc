@@ -23,6 +23,24 @@
 //     return view('welcome1');
 // });
 
-Route::get('/','HomeController@home');
-Route::get('/register','AuthController@register');
-Route::get('/welcome1','AuthController@welcome1');
+// Route::get('/','HomeController@home');
+// Route::get('/register','AuthController@register');
+// Route::get('/welcome1','AuthController@welcome1');
+
+// Route::get('/', function() {
+// 	return view('adminlte.master');
+// });
+
+// Route::get('/', function() {
+// 	return view('adminlte.item.index');
+// });
+
+
+Route::get('/', function() {
+	return view('tugasBlade.halaman1');
+});
+
+Route::get('/data-table', function() {
+	return view('tugasBlade.data-table');
+});
+
